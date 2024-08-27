@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>EncriptadoPJ</title>
+</head>
+<body>
+    <header>
+        <a href="#" rel="">
+            <img src="./imagenes/imagenes1/Logo-2.png" alt="Logo Alura" class="logo">
+        </a>
+    </header>
+
+    <main>
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder= "Ingrese el texto aqui"></textarea>
+            <div class="encriptador_aviso">
+                <img src="./imagenes/imagenes1/bi_exclamation-circle-fill.png" alt="Imagen Aviso" class="img_aviso">
+                <p class="texto_aviso">Solo letras minusculas sin acentos</p>
+            </div>
+            <div class="encriptador_contenedor">
+            <button type="submit" class="btn_encriptar">Encriptar</button>
+            <button type="submit" class="btn_desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="tarjeta">
+            <div class="tarjeta_contenedor">
+                <img src="./imagenes/imagenes1/Muñeco.png" alt="Imagen Muñeco" class="img_muñeco">
+                <p class="texto_uno">Ninguno mensaje fue encontrado</p>
+                <p class="texto_dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly></textarea>
+            <button type="submit" class="btn_copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy: copiright 2024 - Encriptado de texto</p>
+    </footer>
+
+    <script src="./encriptador1.js"></script>
+
+</body>
+</html>

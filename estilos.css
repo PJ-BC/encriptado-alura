@@ -1,0 +1,359 @@
+/*fuentes*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+
+:root{
+    --color-font:#c4c4c4;
+    --color1: #ae7b72 ;
+    --color2:#9c6b62 ;
+    --color3:#8a5b52;
+    --color4:#784a42;
+    --color5:#663a32;
+    --colorblack:#000000;
+
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background:#c4c4c4;
+}
+
+::selection{
+    background: var(--color5);
+    color: var(--color1);
+}
+
+body{
+    height: 100%;
+    background:#c4c4c4;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+    background:#c4c4c4;
+
+}
+
+header .logo{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 48px;
+    background:transparent;
+}
+/* la parte principal*/
+
+main{
+    display: flex;
+    flex-direction: row;
+    background: #c4c4c4;
+    background-size: cover;
+    background-position: center;    
+}
+
+.encriptador{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.encriptar{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border: 1px solid var(--color5);
+    border-radius: 15px;
+    resize: none;
+    background: var(--color1);
+    text-align: center;    
+}
+
+.encriptar::placeholder, :focus{
+    color: #030368fa;
+}
+
+.encriptador_aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+    position: absolute;
+    top: 500;
+    
+}
+
+.texto_aviso{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--color1);
+}
+
+.encriptador_contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 525px;
+}
+
+.btn_encriptar{
+    width: 325px;
+    height: 67px;
+    padding: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color3);
+    background: var(--color1);
+    border: var(--color1);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--colorblack);
+}
+
+.btn_encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-font),
+    inset -3px -4px 8px var(--color5);
+    color: var(--color1);
+}
+
+.btn_desencriptar{
+    width: 325px;
+    height: 67px;
+    padding: 25px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--color3);
+    background: var(--color1);
+    border: var(--color1);
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--colorblack);
+}
+
+.btn_desencriptar:active{
+    box-shadow: inset 2px 2px 4px var(--color-font),
+    inset -3px -4px 8px var(--color5);
+    color: var(--color1);
+}
+
+.tarjeta{
+    width: 270px;
+    height: 500px;
+    background: var(--color1);
+    box-shadow: 10px 24px 32px -8px gray ;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.tarjeta_contenedor{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--color1);
+}
+
+img.img_muñeco{
+    background: var(--color1);
+}
+
+.texto_uno{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color5);
+    background: var(--color1);
+}
+
+.texto_dos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color5);
+    background: var(--color1);
+}
+
+.evaluar{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: green;
+    background: transparent;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    border: none;
+    resize: none;
+}
+ .evaluar:focus{
+    outline: none;
+}
+
+.btn_copiar{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: mediumaquamarine;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn_encriptar:hover,
+.btn_desencriptar:hover,
+.btn_copiar:hover{
+    transform: scale(0.97);
+}
+
+footer{
+    margin-top: 100px;
+    padding: 15px;
+    border-top: 2px solid var(--color-font);
+    color: gray;
+    text-align: center;
+    height: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: gray;
+}
+
+.copyright{
+    background-color: var(--color-font);
+}
+
+@media(max-width: 1250px){
+
+    
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador_contenedor{
+        display: flex;
+        align-items: center;
+        position: inherit;
+        background: transparent;
+    }
+
+    .encriptador_aviso{
+        position: inherit;
+        margin: 15px;
+    }
+
+    .tarjeta{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .tarjeta_contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .img_muñeco{
+        display: none;
+    }
+
+    .btn_copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 720px){
+    header .logo{
+        width: 100%;
+        background: var(--color-font);
+        padding: 2px;
+    }
+
+    .encriptar{
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .encriptador_contenedor{
+        display: grid;
+        gap: 21px;
+    }
+
+    .tarjeta{
+        width: 90%;
+    }
+
+    .copiright{
+        font-size: 20px;
+    }
+
+}
